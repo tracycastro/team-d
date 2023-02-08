@@ -177,20 +177,20 @@ section .section-wrapper {
   padding-block: 4rem;
 }
 
-section.about .section-wrapper,
+/* section.about .section-wrapper,
 section.resources .section-wrapper,
 section.cause .section-wrapper,
 hr {
   max-width: 1100px;
   padding-inline: 5rem;
-}
+} */
 
-hr {
+/* hr {
   border: 0;
   border-top: 3px solid var(--charcoal);
   opacity: 0.3;
   text-align: center;
-}
+} */
 
 footer section p {
   font-size: 1rem;
@@ -390,14 +390,14 @@ footer {
   }
   section .section-wrapper,
   section.home .section-wrapper {
-    max-width: 95%;
+    max-width: 90%;
     padding-block: 3rem;
   }
   section.home {
     padding-block-end: 3rem;
   }
   nav.nav {
-    max-width: 95%;
+    max-width: 90%;
   }
   section.about .section-wrapper,
   section.resources .section-wrapper,
@@ -425,9 +425,9 @@ footer {
     margin-block-start: 1rem;
   }
   .nav__list {
-    justify-content: space-around;
+    justify-content: space-between;
     padding-inline-end: 0;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .nav__list li a {
     font-size: 1.3rem;
@@ -463,7 +463,7 @@ footer {
   .subsection.single-col {
     margin-block-start: -2rem;
   }
-  hr {
+  /* hr {
     max-width: 85%;
-  }
+  } */
 }
