@@ -166,7 +166,7 @@ section.about {
   background-color: var(--white);
 }
 section.resources {
-  background-color: var(--white);
+  background-color: var(--azure);
 }
 section.cause {
   background-color: var(--white);
@@ -352,7 +352,7 @@ section .subsection li {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  background-color: var(--azure);
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -370,6 +370,7 @@ section .subsection li {
   transition: color 0.15s ease-out;
   font-weight: 500;
   margin-block-start: 0;
+  text-align: center;
 }
 .resources .button:hover {
   background-color: var(--white);
@@ -389,8 +390,14 @@ footer {
   }
   section .section-wrapper,
   section.home .section-wrapper {
-    max-width: 92%;
+    max-width: 95%;
     padding-block: 3rem;
+  }
+  section.home {
+    padding-block-end: 3rem;
+  }
+  nav.nav {
+    max-width: 95%;
   }
   section.about .section-wrapper,
   section.resources .section-wrapper,
