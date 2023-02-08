@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "text": "About",
+      "url": "#about"
+    },
+    {
+      "text": "Resources",
+      "url": "/#resources"
+    },
+    {
+      "text": "Cause",
+      "url": "/#cause"
+    },
+    {
+      "text": "Join",
+      "url": "https://mssociety.donordrive.com/index.cfm?fuseaction=donorDrive.team&teamID=30209",
+      "external": "true"
+    }
+  ]
+}

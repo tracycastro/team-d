@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %} {% block content %}
+<section class="home">
+  <div class="section-wrapper">
+    <h1>Team Deloitte • Texas MS 150</h1>
+    <p>
+      Team Deloitte is made up of Deloitte people and our friends and family —
+      cyclists, volunteers, and supporters committed to ending Multiple
+      Sclerosis forever through the Texas MS 150.
+    </p>
+    <div class="button-container">
+      <a
+        href="https://mssociety.donordrive.com/index.cfm?fuseaction=donorDrive.team&teamID=30209"
+        target="_blank"
+        class="button"
+        >Ride With Us</a
+      >
+    </div>
+  </div>
+</section>
+<div class="logo">
+  <div class="logo-inner">
+    {% include "partials/Team-Deloitte-Primary-Logo.svg" %}
+  </div>
+</div>
+
+{% include "partials/about.html" %}
+<hr />
+{% include "partials/resources.html" %}
+<hr />
+{% include "partials/cause.html" %}{% endblock %}
