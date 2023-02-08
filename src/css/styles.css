@@ -173,7 +173,7 @@ section.cause {
 }
 section .section-wrapper {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 900px;
   padding-block: 4rem;
 }
 
