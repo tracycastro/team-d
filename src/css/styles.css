@@ -122,10 +122,11 @@ a:hover {
   letter-spacing: 0.05rem;
   transition: color 0.15s ease-out;
   padding-block: 0.3rem;
-  transition: 0.1s background-color linear, 0.1s color linear;
+  /* transition: 0.1s background-color linear, 0.1s color linear; */
 }
 
-.nav__list .current {
+/* .nav__list .current, */
+.nav__list li a.active {
   color: var(--orange-soda);
   border-bottom: 2px solid var(--orange-soda);
 }
@@ -141,6 +142,7 @@ a:hover {
   transition: 0.1s background-color linear, 0.1s color linear;
   text-decoration: none;
 }
+
 .nav__list li a.cta:hover {
   background-color: var(--honeydew);
   color: var(--orange-soda);
@@ -449,6 +451,9 @@ footer {
   section.home .section-wrapper {
     max-width: 85%;
     padding-block: 3rem;
+  }
+  section.home {
+    padding-block-end: 3rem;
   }
   .subsection,
   .subsection:nth-of-type(even) {
