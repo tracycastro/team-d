@@ -238,5 +238,28 @@
         <p>Still have questions? Let us know and we’ll be happy to help!</p>
       </div>
     </div>
+    <div class="subsection rides">
+      <h2>Upcoming Houston Rides</h2>
+      {% for ride in upcomingRdes %}
+      <div class="ride-container">
+        <p>{{ ride.rideDate}} {% if ride.rideTitle %}</p>
+        <p><strong>{{ride.rideTitle }}</strong></p>
+        {% else %}
+        <p><strong>TBA</strong></p>
+        {% endif %} {% if ride.linkText %}
+        <p>
+          <a
+            href="{{ ride.linkHREF }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ ride.linkText}}</a
+          >
+        </p>
+
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
