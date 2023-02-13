@@ -426,6 +426,9 @@ footer {
     flex-direction: column;
     margin-block-end: 4rem;
   }
+  .subsection.rides {
+    max-width: 90%;
+  }
   .site-head__inner {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -471,6 +474,10 @@ footer {
   section.home .section-wrapper {
     max-width: 85%;
     padding-block: 3rem;
+  }
+
+  .subsection.rides {
+    max-width: 90%;
   }
   section.home {
     padding-block-end: 3rem;
