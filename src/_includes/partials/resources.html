@@ -239,27 +239,88 @@
       </div>
     </div>
     <div class="subsection rides">
-      <h2>Upcoming Houston Rides</h2>
-      {% for ride in upcomingRdes %}
-      <div class="ride-container">
-        <p>{{ ride.rideDate}} {% if ride.rideTitle %}</p>
-        <p><strong>{{ride.rideTitle }}</strong></p>
-        {% else %}
-        <p><strong>TBA</strong></p>
-        {% endif %} {% if ride.linkText %}
-        <p>
-          <a
-            href="{{ ride.linkHREF }}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ ride.linkText}}</a
-          >
-        </p>
-
-        {% endif %}
+      <h2>Upcoming Rides</h2>
+      <h3>Houston</h3>
+      <div class="ride-wrapper">
+        {% for ride in upcomingRdes %} {% if ride.rideCity == 'houston' %}
+        <div class="ride-container">
+          <div class="date-title">
+            <div class="ride-date"><p>{{ ride.rideDate }}</p></div>
+            {% if ride.rideTitle %}
+            <div class="ride-title">
+              <p><strong>{{ ride.rideTitle }}</strong></p>
+            </div>
+            {% else %}
+            <div class="ride-title">
+              <p><strong>TBA</strong></p>
+            </div>
+            {% endif %}
+          </div>
+          {% if ride.linkText %}
+          <div class="ride-link">
+            <p>
+              <a
+                href="{{ ride.linkHREF }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ ride.linkText }}</a
+              >
+            </p>
+          </div>
+          {% endif %} {% if ride.rideDesc %}
+          <div class="ride-desc">
+            <p>
+              <span>{% if ride.rideTime%}{{ ride.rideTime }} - </span>
+              {% endif %}{{ ride.rideDesc }}
+            </p>
+          </div>
+          {% endif %}
+        </div>
+        <!--end ride-container-->
+        {% endif %} {% endfor %}
       </div>
-      {% endfor %}
+      <!--/ride-wrapper-->
+      <h3>Austin</h3>
+      <div class="ride-wrapper">
+        {% for ride in upcomingRdes %} {% if ride.rideCity == 'austin' %}
+        <div class="ride-container">
+          <div class="date-title">
+            <div class="ride-date"><p>{{ ride.rideDate }}</p></div>
+            {% if ride.rideTitle %}
+            <div class="ride-title">
+              <p><strong>{{ ride.rideTitle }}</strong></p>
+            </div>
+            {% else %}
+            <div class="ride-title">
+              <p><strong>TBA</strong></p>
+            </div>
+            {% endif %}
+          </div>
+          {% if ride.linkText %}
+          <div class="ride-link">
+            <p>
+              <a
+                href="{{ ride.linkHREF }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ ride.linkText }}</a
+              >
+            </p>
+          </div>
+          {% endif %} {% if ride.rideDesc %}
+          <div class="ride-desc">
+            <p>
+              <span>{% if ride.rideTime%}{{ ride.rideTime }} - </span>
+              {% endif %}{{ ride.rideDesc }}
+            </p>
+          </div>
+          {% endif %}
+        </div>
+        <!--end ride-container-->
+        {% endif %} {% endfor %}
+      </div>
     </div>
+    <!--subsection rides yes-->
   </div>
+  <!-- /section-wrapper -->
 </section>
